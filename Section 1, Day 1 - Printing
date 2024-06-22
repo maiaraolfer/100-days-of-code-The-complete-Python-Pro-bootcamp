@@ -1,0 +1,18 @@
+####################
+# DAY 1 - PRINTING #
+# MAIARA FERNANDES #
+# JUNE 22nd 2024   #
+####################
+
+print("Hello world!") #double quotes tells the computer that this is a string/text. 
+#Stackoverflow is a great resource for finding solutions to errors.
+#the syntax will be highlighted to make easier for you to find the error.
+#The red text in console output is a syntaxError. 
+print("She said 'Hello' and then left")
+print('She said "Hello" and then left')
+print("Hi or \"Hello\"")
+
+print("Hello"+input("What is your name?"))
+# input() function will get the user input in the console
+# then print() function will print the word "Hello" and the user's input
+# in Mac: 'command + / ' will comment out the line of code - make the line as comment, not as code!
