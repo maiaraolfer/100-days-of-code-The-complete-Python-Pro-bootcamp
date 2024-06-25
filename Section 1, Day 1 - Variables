@@ -1,0 +1,21 @@
+#############################
+# Day 1 - Printing exercise #
+# MAIARA FERNANDES          #
+# JUNE 22nd 2024            #
+#############################
+# INSTRUCTIONS: This program takes two inputs. The first input is stored in a variable called a. The second input is stored in a variable called b.
+# Write a program that switches the values stored in the variables a and b.
+
+# There are two variables, a and b from input
+a = input() #line 1 input = 29
+b = input() #line 2 input = 41
+# 🚨 Don't change the code above ☝️
+####################################
+# Write your code below this line 👇
+c = a #create a third variable to store 'a'
+a = b #now overwright 'b' as 'a'
+b = c #now use the third variable with 'a' value as 'b'
+# this way b = a and a = b!
+# 🚨 Don't change the code below 👇
+print("a: " + a)
+print("b: " + b)
