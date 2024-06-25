@@ -1,0 +1,11 @@
+#############################
+# Day 1 - input () function #
+# MAIARA FERNANDES          #
+# JUNE 25th 2024            #
+#############################
+# INSTRUCTIONS: Write a program that calculates and outputs the number of characters in any name. 
+# The automated tests will try out lots of different names as the input. 
+# Your code should work for any name. Your code should only output the number, no other text is needed.
+
+print(len(input()))
+# this asks the computer to print the number of characters of the user's answer to input() function.
