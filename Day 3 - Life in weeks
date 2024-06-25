@@ -1,0 +1,19 @@
+######################
+# Day 2 - Data types #
+# MAIARA FERNANDES   #
+# JUNE 25th 2024     #
+######################
+# INSTRUCTIONS: Create a program using maths and f-Strings that tells us how many weeks we have left, if we live until 90 years old.
+# It will take your current age as the input and output a message with our time left in this format:
+# You have x weeks left.
+# Where x is replaced with the actual calculated number of weeks the input age has left until age 90.
+
+age = input() # user's age
+# 🚨 Don't change the code above 👆
+# Write your code below this line 👇
+ 
+dying_age = 90
+years_left = 90 - int(age)
+weeks_left = int(years_left * 52) # PS.: there are 52 weeks in one year.
+print(f"You have {weeks_left} weeks left.") # f" allows you to insert a variable inside {} in print() function. 
+                                            # It is an easier way to insert integer or float numbers in printing.
