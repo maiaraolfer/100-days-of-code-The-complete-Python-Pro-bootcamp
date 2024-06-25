@@ -1,0 +1,19 @@
+#######################
+# Day 2 - Odd or even #
+# MAIARA FERNANDES    #
+# JUNE 25th 2024      #
+#######################
+# INSTRUCTIONS: Write a program that works out whether if a given number is an odd or even number.
+# Even numbers can be divided by 2 with no remainder.
+#NOTE: The modulo is written as a percentage sign (%) in Python. It gives you the remainder after a division.
+
+# Which number do you want to check?
+number = int(input())
+# 🚨 Don't change the code above 👆
+
+# Write your code below this line 👇
+remainder = number % 2
+if remainder == 0:
+  print("This is an even number.")
+else:
+  print("This is an odd number.")
