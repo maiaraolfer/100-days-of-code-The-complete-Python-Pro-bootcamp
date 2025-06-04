@@ -1,6 +1,7 @@
 print("Welcome to Rock, Paper, Scissors!")
 input = input("Type 0 for Rock, 1 for Paper, or 2 for Scissors: ")
-input = int(input)  # Convert input to an integer
+input = int(input)  # Convert input string into an integer / whole number
+
 rock = '''
     _______
 ---'   ____)
@@ -70,5 +71,5 @@ elif input == 2 and computer_choice == 0: #2-0
     print("You lose! Rock beats Scissors.")
 elif input >= 3 or input < 0: # invalid input
     print("Invalid input! Please choose 0, 1, or 2.")
-else: # combinacoes 0-0, 1-1, 2-21
+else: # combinations 0-0, 1-1, 2-2
     print("It's a draw! You both chose the same.")
