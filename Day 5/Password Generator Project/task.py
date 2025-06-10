@@ -21,3 +21,31 @@ random.shuffle(password) #do not assign it to a variable. shuffle returns None, 
 password_str = ''.join(password) # turning it into string
 print(f"Your password is {password_str}") #printing the password
 
+
+## using for loop - easy level
+password = ""
+for character in range(0,nr_letters): 
+    password += random.choice(letters)
+
+for character in range(1,nr_symbols+1):
+    password += random.choice(symbols)
+    
+for character in range(0,nr_numbers):
+    password += random.choice(numbers)
+
+print(password)
+
+# using loop  - hard level
+password = []
+for character in range(0,nr_letters): 
+    password.append(random.choice(letters))
+
+for character in range(1,nr_symbols+1):
+    password.append(random.choice(symbols))
+    
+for character in range(0,nr_numbers):
+    password.append(random.choice(numbers))
+
+random.shuffle(password)
+password = ''.join(password)
+print(password)
