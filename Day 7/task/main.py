@@ -1,3 +1,4 @@
+# STEP 1
 word_list = ["aardvark", "baboon", "camel"] #tip: animals
 
 # TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word. Then print it.
@@ -12,8 +13,29 @@ guess = input("Please, choose a letter!").lower()
 # TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word. Print "Right" if it
 #  is, "Wrong" if it's not.
 
-if guess in chosen_word:
-    print("Right")
-else:
-    print("Wrong")
+#if guess in chosen_word:
+#    print("Right")
+#else:
+#    print("Wrong")
 
+#OR
+
+for letter in chosen_word:
+    if letter == guess:
+        print("Right")
+    else:
+        print("Wrong")
+        
+# STEP 2
+
+# TODO 1
+placeholder = "" #empty string
+placeholder = '_'*len(chosen_word)
+
+print(placeholder)
+
+# TODO 2
+display = ""
+
+for letter in chosen_word:
+    
