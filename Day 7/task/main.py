@@ -1,49 +1,33 @@
-# STEP 1
+import random
+
 word_list = ["aardvark", "baboon", "camel"] #tip: animals
 
-# TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word. Then print it.
-import random
 chosen_word = random.choice(word_list)
 print(chosen_word)  # You can uncomment this line for debugging, then comment it out for the real game
 
-# TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
-guess = input("Please, choose a letter!").lower()
-#print(f"{guess}") # uncomment for debugging
-
-# TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word. Print "Right" if it
-#  is, "Wrong" if it's not.
-
-#if guess in chosen_word:
-#    print("Right")
-#else:
-#    print("Wrong")
-
-#OR
-
-for letter in chosen_word:
-    if letter == guess:
-        print("Right")
-    else:
-        print("Wrong")
-        
-# STEP 2
-
-# TODO 1
 placeholder = "" #empty string
 for position in range(len(chosen_word)):
     placeholder += '_'
 
 print(placeholder)
 
-# TODO 2
-display = ""
-
-for letter in chosen_word:
-    if letter == guess:
-        display += letter
-    else:
-        display += "_"
-        
-print(display)
-
-# STEP 3
+game_over = False #this will stop the while loop when it become True
+correct_letters = [] #empty list that stores the correct letters guessed by user
+while not game_over: #while game_over is False, keep asking the user for a letter
+    
+    guess = input("Guess a letter:").lower() #user will guess a letter
+    
+    display = "" # string empty at first iteration
+    for letter in chosen_word:
+        if letter == guess: #if letter guessed is in the word
+            display += letter # add this letter to the display
+            correct_letters.append(guess) #add this letter to the correct letter list
+        elif letter in correct_letters: #if the guessed letter is in the correct letter list
+            display += letter #write it in display
+        else: # if the letter is not in the word and is not in the corrected list, write underscore indicating a blank space
+            display += "_"
+        print(display) 
+              
+    if "_" not in display: #condition to turn game_over into True and stop the while loop.
+        game_over = True
+        print("You win!")
