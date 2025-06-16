@@ -43,3 +43,25 @@ while number_of_hurdles > 0:
 #for loop are particularly good for iterating through a list and do something to the items of the list
 #while is used when you dont care for the list and the iteration, just for the condition you set.
 #while you continue running until the condition is met.. this can lead to an infinite loop.
+
+# Reeborgs hurdles 4 - variable heights
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def jump():
+    turn_right()
+    move()
+    turn_right()
+    move()
+    
+       
+while not at_goal():
+    if right_is_clear():
+        jump()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
