@@ -30,7 +30,8 @@ for letter in chosen_word:
 
 # TODO 1
 placeholder = "" #empty string
-placeholder = '_'*len(chosen_word)
+for position in range(len(chosen_word)):
+    placeholder += '_'
 
 print(placeholder)
 
@@ -38,4 +39,11 @@ print(placeholder)
 display = ""
 
 for letter in chosen_word:
-    
+    if letter == guess:
+        display += letter
+    else:
+        display += "_"
+        
+print(display)
+
+# STEP 3
