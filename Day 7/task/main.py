@@ -104,6 +104,7 @@ while not game_over: #while game_over is False, keep asking the user for a lette
             display += letter #write it in display
         else: # if the letter is not in the word and is not in the corrected list, write underscore indicating a blank space
             display += "_"
+            print(f"You guessed letter '{guess}', that is not in the word. You lost a life.")
      
     if guess not in chosen_word:
         lives -= 1
