@@ -118,5 +118,3 @@ while not game_over: #while game_over is False, keep asking the user for a lette
         game_over = True
         print("You won!")
         
-        
-
